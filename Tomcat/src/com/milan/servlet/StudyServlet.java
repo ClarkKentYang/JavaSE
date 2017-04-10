@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -28,7 +29,10 @@ public class StudyServlet implements Servlet{
 	}
 
 	@Override
-	public void init(ServletConfig arg0) throws ServletException {
+	public void init(ServletConfig config) throws ServletException {
+		System.out.println("servletName:"+config.getServletName());
+		System.out.println("author:"+config.getInitParameter("author"));
+		ServletContext context = config.getServletContext();
 		System.out.println("init");
 	}
 

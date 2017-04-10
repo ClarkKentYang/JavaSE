@@ -10,14 +10,57 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  <context-param>
+    <param-name>servletContext-name</param-name>
+    <param-value>servletContext-value</param-value>
+  </context-param>
+  
   <servlet>
-    <description></description>
-    <display-name>StudyServlet</display-name>
     <servlet-name>StudyServlet</servlet-name>
     <servlet-class>com.milan.servlet.StudyServlet</servlet-class>
+    <init-param>
+      <param-name>author</param-name>
+      <param-value>Clark</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>StudyServlet</servlet-name>
     <url-pattern>/StudyServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>servletContextTest</servlet-name>
+    <servlet-class>com.milan.servlet.servletContextTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletContextTest</servlet-name>
+    <url-pattern>/servletContextTest</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>servletContextSetValue</servlet-name>
+    <servlet-class>com.milan.servlet.servletContextSetValue</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletContextSetValue</servlet-name>
+    <url-pattern>/servletContextSetValue</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletContextGetValue</servlet-name>
+    <servlet-class>com.milan.servlet.ServletContextGetValue</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContextGetValue</servlet-name>
+    <url-pattern>/ServletContextGetValue</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletContextSetValue</servlet-name>
+    <servlet-class>com.milan.servlet.ServletContextSetValue</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContextSetValue</servlet-name>
+    <url-pattern>/ServletContextSetValue</url-pattern>
   </servlet-mapping>
 </web-app>
