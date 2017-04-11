@@ -9,12 +9,10 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <context-param>
     <param-name>servletContext-name</param-name>
     <param-value>servletContext-value</param-value>
   </context-param>
-  
   <servlet>
     <servlet-name>StudyServlet</servlet-name>
     <servlet-class>com.milan.servlet.StudyServlet</servlet-class>
@@ -27,7 +25,6 @@
     <servlet-name>StudyServlet</servlet-name>
     <url-pattern>/StudyServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>servletContextTest</servlet-name>
     <servlet-class>com.milan.servlet.servletContextTest</servlet-class>
@@ -36,7 +33,6 @@
     <servlet-name>servletContextTest</servlet-name>
     <url-pattern>/servletContextTest</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>servletContextSetValue</servlet-name>
     <servlet-class>com.milan.servlet.servletContextSetValue</servlet-class>
@@ -45,7 +41,6 @@
     <servlet-name>servletContextSetValue</servlet-name>
     <url-pattern>/servletContextSetValue</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ServletContextGetValue</servlet-name>
     <servlet-class>com.milan.servlet.ServletContextGetValue</servlet-class>
@@ -54,7 +49,6 @@
     <servlet-name>ServletContextGetValue</servlet-name>
     <url-pattern>/ServletContextGetValue</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ServletContextSetValue</servlet-name>
     <servlet-class>com.milan.servlet.ServletContextSetValue</servlet-class>
@@ -62,5 +56,25 @@
   <servlet-mapping>
     <servlet-name>ServletContextSetValue</servlet-name>
     <url-pattern>/ServletContextSetValue</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseServlet</display-name>
+    <servlet-name>ResponseServlet</servlet-name>
+    <servlet-class>com.milan.response.ResponseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseServlet</servlet-name>
+    <url-pattern>/ResponseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseWriterDemo</display-name>
+    <servlet-name>ResponseWriterDemo</servlet-name>
+    <servlet-class>com.milan.response.ResponseWriterDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseWriterDemo</servlet-name>
+    <url-pattern>/ResponseWriterDemo</url-pattern>
   </servlet-mapping>
 </web-app>
