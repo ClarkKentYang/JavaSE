@@ -77,4 +77,12 @@
     <servlet-name>ResponseWriterDemo</servlet-name>
     <url-pattern>/ResponseWriterDemo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>RequestDemo</servlet-name>
+    <servlet-class>com.milan.request.RequestDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestDemo</servlet-name>
+    <url-pattern>/requestDemo/RequestDemo</url-pattern>
+  </servlet-mapping>
 </web-app>
