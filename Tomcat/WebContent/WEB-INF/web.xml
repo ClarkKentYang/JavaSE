@@ -85,4 +85,14 @@
     <servlet-name>RequestDemo</servlet-name>
     <url-pattern>/requestDemo/RequestDemo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SendCookieServlet</display-name>
+    <servlet-name>SendCookieServlet</servlet-name>
+    <servlet-class>com.milan.cookie.SendCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendCookieServlet</servlet-name>
+    <url-pattern>/SendCookieServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
