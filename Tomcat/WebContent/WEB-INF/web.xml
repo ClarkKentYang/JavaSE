@@ -95,4 +95,24 @@
     <servlet-name>SendCookieServlet</servlet-name>
     <url-pattern>/SendCookieServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RemoveServlet</display-name>
+    <servlet-name>RemoveServlet</servlet-name>
+    <servlet-class>com.milan.cookie.RemoveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveServlet</servlet-name>
+    <url-pattern>/RemoveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetCookieServlet</display-name>
+    <servlet-name>GetCookieServlet</servlet-name>
+    <servlet-class>com.milan.cookie.GetCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCookieServlet</servlet-name>
+    <url-pattern>/GetCookieServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

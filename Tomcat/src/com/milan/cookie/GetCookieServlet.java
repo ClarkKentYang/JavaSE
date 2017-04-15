@@ -8,15 +8,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SendCookieServlet
+ * Servlet implementation class GetCookieServlet
  */
-public class SendCookieServlet extends HttpServlet {
+public class GetCookieServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SendCookieServlet() {
+    public GetCookieServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -25,16 +25,20 @@ public class SendCookieServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Cookie cookie = new Cookie("username", "milan");//创建cookie
-		cookie.setMaxAge(60*60);//设置cookie的持久化时间(在硬盘保存的时间)
-		cookie.setPath("/Tomcat");//设置cookie的归属
-		response.addCookie(cookie);//添加到客户端
+		Cookie[] cookies = request.getCookies();
+		for (Cookie cookie : cookies) {
+			if(cookie.getName().equals("username")){
+				System.out.println(cookie.getValue());
+			}
+		}
+		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
