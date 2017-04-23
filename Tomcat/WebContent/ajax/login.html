@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#username").blur(function() {
+			var usernameInput = $(this).val();
+			$.post(
+				"/Tomcat/LoginServlet",
+				{"username":usernameInput},
+				function(data) {
+					var exist = data.exist;
+					if(exist){
+						$("#note").css("color","red");
+						$("#note").html("该用户名已经被使用");
+					}else{
+						$("#note").css("color","green");
+						$("#note").html("该用户名可以注册");
+					}
+				},
+				"json"
+			);
+		});
+	});
+</script>
+</head>
+<body>
+	用户名：<input type="text" id="username">&nbsp;<span id="note" onblur="fn()"></span><br/>
+	密码：         <input type="password" id="password"><br/>
+	<input type="submit" value="注册">
+</body>
+</html>
