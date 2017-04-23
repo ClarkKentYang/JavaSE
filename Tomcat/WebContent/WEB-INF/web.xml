@@ -125,4 +125,22 @@
     <servlet-name>SessionServlet</servlet-name>
     <url-pattern>/SessionServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>AjaxServlet</servlet-name>
+    <servlet-class>com.milan.servlet.AjaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet</servlet-name>
+    <url-pattern>/AjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AjaxServlet2</display-name>
+    <servlet-name>AjaxServlet2</servlet-name>
+    <servlet-class>com.milan.servlet.AjaxServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet2</servlet-name>
+    <url-pattern>/ajaxServlet2</url-pattern>
+  </servlet-mapping>
 </web-app>
