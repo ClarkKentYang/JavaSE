@@ -153,4 +153,51 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
+  <listener>
+    <listener-class>com.milan.listener.MyServletContextListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.milan.listener.MyServletContextAttributeListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>TestServletContextAttributeListener</display-name>
+    <servlet-name>TestServletContextAttributeListener</servlet-name>
+    <servlet-class>com.milan.listener.TestServletContextAttributeListener</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServletContextAttributeListener</servlet-name>
+    <url-pattern>/TestServletContextAttributeListener</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestPersonBinding</display-name>
+    <servlet-name>TestPersonBinding</servlet-name>
+    <servlet-class>com.milan.listener.TestPersonBinding</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestPersonBinding</servlet-name>
+    <url-pattern>/TestPersonBinding</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestStudentActivation</display-name>
+    <servlet-name>TestStudentActivation</servlet-name>
+    <servlet-class>com.milan.listener.TestStudentActivation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestStudentActivation</servlet-name>
+    <url-pattern>/TestStudentActivation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>TestStudentActivation2</display-name>
+    <servlet-name>TestStudentActivation2</servlet-name>
+    <servlet-class>com.milan.listener.TestStudentActivation2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestStudentActivation2</servlet-name>
+    <url-pattern>/TestStudentActivation2</url-pattern>
+  </servlet-mapping>
 </web-app>
